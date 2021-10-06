@@ -14,7 +14,7 @@ public class Dreams implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("modid");
-	public static BlockPos pos;
+	public static BlockPos bedpos;
 
 	@Override
 	public void onInitialize() {

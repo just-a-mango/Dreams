@@ -34,13 +34,13 @@ public class DreamsTeleport {
 					LOGGER.info(world.getLevelProperties());
 					String overworldid = "net.minecraft.world.dimension.DimensionType@4155b8ef";
 					if(!(world.getLevelProperties().toString().contains("79ff380a"))) {
-						Dreams.pos = pos;
+						Dreams.bedpos = pos;
 						server.getCommandManager().execute(player.getCommandSource(), "execute in dreams:dreams run tp @s " + pos.getX() + " " + pos.getY() + " " + pos.getZ());
 						//server.getCommandManager().execute(player.getCommandSource(), "execute in dreams:dreams run setblock " + pos.getX() + " " + (pos.getY() - 10) + " " + pos.getZ() + " slime_block");
 					}
 					else {
 
-						server.getCommandManager().execute(player.getCommandSource(), "execute in minecraft:overworld run tp @s " + Dreams.pos.getX() + " " + Dreams.pos.getY() + " " + Dreams.pos.getZ());
+						server.getCommandManager().execute(player.getCommandSource(), "execute in minecraft:overworld run tp @s " + Dreams.bedpos.getX() + " " + Dreams.bedpos.getY() + " " + Dreams.bedpos.getZ());
 
 					}
 				}
