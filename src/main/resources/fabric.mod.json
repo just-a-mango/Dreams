@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "dreams",
+  "version": "1.0",
+
+  "name": "Dreams",
+  "description": "This mods adds the once promised Dreams dimension by Notch!",
+  "authors": [
+    "Just_a_Mango"
+  ],
+  "contact": {
+    "homepage": "https://just-a-mango.github.io/me/"
+  },
+
+  "license": "GNU GPLv2",
+  "icon": "assets/dreams/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mango.dreams.Dreams"
+    ]
+  },
+  "mixins": [
+    "carbon.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Website": "https://just-a-mango.github.io/me/"
+      },
+      "badges": [],
+      "parent": {
+        "id": "dreams",
+        "name": "Dreams",
+        "description": "This mods adds the once promised Dreams dimension by Notch!",
+        "icon": "assets/dreams/icon.png",
+        "badges": []
+      }
+    }
+  }
+}
